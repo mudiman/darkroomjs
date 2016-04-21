@@ -89,7 +89,7 @@ In order to get the edited image data, you must ask the canvas for it. By doing 
 save: {
       callback: function() {
           this.darkroom.selfDestroy(); // Cleanup
-          var newImage = dkrm.canvas.toDataURL();
+          var newImage = dkrm.sourceCanvas.toDataURL();   
           fileStorageLocation = newImage;
       }
   }
